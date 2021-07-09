@@ -42,6 +42,9 @@ html{
     display: flex;
 }
 
+.grid{
+    display: grid;
+}
 
 .section-title{
     font: lighter 2.2rem var(--title-font);
@@ -179,9 +182,25 @@ ul li{
     animation: updown 1s ease infinite;
 }
 
+.card-folder{
+    width: 20vw;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.card-folder:hover{
+    animation: updown 1s ease infinite;
+}
+
+.card-img-folder{
+    width: 20vw;
+}
+
 .price-text{
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .price-button{
@@ -201,7 +220,28 @@ ul li{
     
 }
 
-/*===== DUCKS =====*/
+/*===== NEWSLETTER =====*/
+
+input{
+    font: 1.6rem var(--text-font);
+    padding: 0.3rem;
+}
+
+.button{
+    margin: 1rem auto;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0.3rem;
+    font: lighter 1.8rem var(--text-font);
+    transition: background-color ease 0.5s;
+}
+
+.button:hover{
+    color: white;
+    background-color: orange;
+    border-color: orangered;
+    
+}
 
 
 
